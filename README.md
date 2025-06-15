@@ -21,5 +21,4 @@ SupportFlowは、個人が簡単な質問に答えるだけで該当する行政
 - [docs/Roadmap.md](docs/Roadmap.md) – 導入・展開ステップの見通し
 - [docs/FAQ.md](docs/FAQ.md) – 想定問答集（市民・利用者視点）
 - [docs/CounterPoints.md](docs/CounterPoints.md) – 想定反論と制度的検証（行政視点）
-- [docs/Deployment.md](docs/Deployment.md) – 公開・展開方法（GitHub等）
 - [LICENSE](LICENSE) – 本構想の利用許諾と帰属条件（SystemDesignManual準拠）
