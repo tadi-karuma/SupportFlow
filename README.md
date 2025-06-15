@@ -9,15 +9,17 @@ SupportFlowは、個人が簡単な質問に答えるだけで該当する行政
 
 ## 📂 ドキュメント構成
 
-- [SUMMARY.md](SUMMARY.md) – 要点サマリ（1ページ）
-- [docs/Structure.md](docs/Structure.md) – システム構造・技術原理
-- [docs/Simulation.md](docs/Simulation.md) – 制度効果・定量評価
-- [docs/Roadmap.md](docs/Roadmap.md) – 導入ステップと技術対応
-- [docs/FAQ.md](docs/FAQ.md) – よくある質問と対応
-- [docs/CounterPoints.md](docs/CounterPoints.md) – 想定反論と検証
 
+## 🔗 各種ドキュメントリンク
 
-- [LICENSE](LICENSE) – 本構想の利用許諾と帰属条件（SystemDesignManual準拠）
+- [SUMMARY.md](SUMMARY.md) – 構想要点サマリー
+- [docs/Structure.md](docs/Structure.md) – 構造や設計原理の記述
 - [docs/QnA_Spec.md](docs/QnA_Spec.md) – 質問構文仕様書
 - [docs/PolicyDB_Schema.md](docs/PolicyDB_Schema.md) – 制度DBスキーマ仕様
 - [docs/ui_flow.md](docs/ui_flow.md) – UI構成（マークダウン表形式）
+- [docs/Simulation.md](docs/Simulation.md) – 技術評価・制度効果の記録
+- [docs/Roadmap.md](docs/Roadmap.md) – 導入・展開ステップの見通し
+- [docs/FAQ.md](docs/FAQ.md) – 想定問答集（市民・利用者視点）
+- [docs/CounterPoints.md](docs/CounterPoints.md) – 想定反論と制度的検証（行政視点）
+- [docs/Deployment.md](docs/Deployment.md) – 公開・展開方法（GitHub等）
+- [LICENSE](LICENSE) – 本構想の利用許諾と帰属条件（SystemDesignManual準拠）
