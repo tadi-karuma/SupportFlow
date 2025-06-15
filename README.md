@@ -42,4 +42,5 @@ SupportFlowは、個人または法人が簡単な質問に答えるだけで、
 ### 📄 その他
 
 - [SUMMARY.md](SUMMARY.md) – 1ページ構想要約
-- [LICENSE](LICENSE) – 本構想の利用許諾（SystemDesignManual準拠）
+- [LICENSE](LICENSE) – 本構想の利用許諾　↪︎構想構文：SystemDesignManual準拠（CC BY 4.0）
+
