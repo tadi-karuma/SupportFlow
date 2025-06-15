@@ -24,3 +24,15 @@
 - 対象者に対する自動制度提示によって、申請対象者の抽出率が大幅に向上
 - 必要書類の事前提示により、再訪率の大幅減少が見込まれる
 - 窓口職員が制度の初歩説明に時間を取られなくなり、1日あたりの処理能力が倍増
+
+
+---
+
+## 📚 出典・参考
+
+- 福岡市「来庁予約サービス」実証実験（2022年〜）
+  - [福岡市スマート窓口実証](https://www.city.fukuoka.lg.jp/soki/kikaku/shisei/smartshisei-jissho.html)
+- デジタル庁「ぴったりサービス」制度検索API
+  - [ぴったりサービス](https://www.digital.go.jp/policies/online-application/)
+- 総務省「マイナポータルとの連携事例集」
+  - [マイナポータル利活用ガイドライン](https://www.soumu.go.jp/main_sosiki/gyoukan/kanri/mynumber_portal.html)
