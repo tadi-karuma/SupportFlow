@@ -15,4 +15,4 @@ SupportFlowは、個人が簡単な質問に答えるだけで該当する行政
 - [docs/Roadmap.md](docs/Roadmap.md) – 導入ステップと技術対応
 - [docs/FAQ.md](docs/FAQ.md) – よくある質問と対応
 - [docs/CounterPoints.md](docs/CounterPoints.md) – 想定反論と検証
-
+- [LICENSE](LICENSE) – ライセンス
