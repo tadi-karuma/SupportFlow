@@ -1,10 +1,12 @@
 # 🗂 制度DBスキーマ仕様 – SupportFlow構想用（v1）
 
-SupportFlowでは、各種支援制度を一元的に扱うため、以下の構造に準拠したJSON形式の制度DBを想定する。
+SupportFlowでは、国・自治体の制度情報を統合・照合するために、以下の構造に準拠したJSON形式の制度DBを想定しています。
 
 ---
 
-## 1. 最上位スキーマ構造
+## 🧱 A. 基本構造（最小単位）
+
+各制度は以下の基本項目を含む構造です：
 
 ```json
 {
@@ -25,7 +27,9 @@ SupportFlowでは、各種支援制度を一元的に扱うため、以下の構
 
 ---
 
-## 2. `conditions` 構成（判定条件）
+## 🔍 B. 条件定義ブロック（conditions）
+
+対象者要件に関するロジック定義です：
 
 ```json
 "conditions": [
@@ -44,7 +48,7 @@ SupportFlowでは、各種支援制度を一元的に扱うため、以下の構
 
 ---
 
-## 3. `required_documents` 構成（必要書類）
+## 📄 C. 必要書類構造（required_documents）
 
 ```json
 "required_documents": [
@@ -55,39 +59,47 @@ SupportFlowでは、各種支援制度を一元的に扱うため、以下の構
 
 ---
 
-## 4. `metadata` の推奨補足項目
+## 🏷 D. メタ情報と識別属性（metadata）
+
+更新日時・カテゴリ・対象種別など：
 
 ```json
 "metadata": {
   "last_updated": "2024-11-01",
   "version": "1.1",
   "source": "https://www.city.fukuoka.lg.jp/welfare/",
-  "tags": ["市民向け", "定額給付", "65歳以上"]
+  "tags": ["市民向け", "定額給付", "65歳以上"],
+  "applicable_to": "individual"  // or "corporate"
 }
 ```
 
 ---
 
-## 5. データ連携前提
+## 🔁 E. 制度更新とデータ連携モデル
 
-- 国制度はAPI取得（例：`api.support.go.jp/policies`）
-- 地方制度は自治体ごとに構築されたJSONデータ（LGWAN対応）
-- UI表示前にマージ処理を実施し、重複制度はラベル統合すること
+- **中央制度（国）**：API連携（例：`https://api.support.go.jp/policies`）にて配信
+- **地方制度（自治体）**：各自治体内で作成・配備（例：LGWAN環境で運用）
+- **UI側処理**：国＋地方のJSONデータをマージし、重複制度は `id` に基づき統合表示
+- **更新責任分担**：
+  - 国：国制度の改廃・API配信
+  - 自治体：地方制度の定義・更新（UI上はラベル付きで明示）
 
 ---
 
-## 🏢 対象者種別フィールドの追加（法人制度対応）
+## 🏢 F. 法人制度への拡張対応
 
-制度データには、個人・法人どちらに適用されるかを明記する属性 `applicable_to` を追加します。
+- `metadata.applicable_to` を使用し、「individual」「corporate」どちらに適用されるかを指定
+- 質問構文（`QnA_Spec.md`）と連携し、対象別の提示が可能
 
-例：
+例（法人向け）：
 
 ```json
 {
-  "policy_id": "corp_002",
+  "id": "corp_002",
   "title": "中小企業向け設備投資補助金",
   "applicable_to": "corporate",
   "conditions": [...],
-  ...
+  "required_documents": [...],
+  "metadata": { "version": "1.0" }
 }
 ```
