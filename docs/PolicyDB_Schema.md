@@ -73,3 +73,21 @@ SupportFlowでは、各種支援制度を一元的に扱うため、以下の構
 - 国制度はAPI取得（例：`api.support.go.jp/policies`）
 - 地方制度は自治体ごとに構築されたJSONデータ（LGWAN対応）
 - UI表示前にマージ処理を実施し、重複制度はラベル統合すること
+
+---
+
+## 🏢 対象者種別フィールドの追加（法人制度対応）
+
+制度データには、個人・法人どちらに適用されるかを明記する属性 `applicable_to` を追加します。
+
+例：
+
+```json
+{
+  "policy_id": "corp_002",
+  "title": "中小企業向け設備投資補助金",
+  "applicable_to": "corporate",
+  "conditions": [...],
+  ...
+}
+```
