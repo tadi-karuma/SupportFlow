@@ -4,7 +4,6 @@ SupportFlowは、個人が簡単な質問に答えるだけで該当する行政
 
 本構想は、制度の「自己発見負担」や「窓口混雑」「申請漏れ」など、現行運用上の非効率を抜本的に見直し、住民にも行政にも“うれしい仕組み”を提供します。
 
- - 「本構想は、SystemDesignManual（M.T）準拠により構成」
 
 ---
 
@@ -16,4 +15,9 @@ SupportFlowは、個人が簡単な質問に答えるだけで該当する行政
 - [docs/Roadmap.md](docs/Roadmap.md) – 導入ステップと技術対応
 - [docs/FAQ.md](docs/FAQ.md) – よくある質問と対応
 - [docs/CounterPoints.md](docs/CounterPoints.md) – 想定反論と検証
-- [LICENSE](LICENSE) – ライセンス
+
+
+- [LICENSE](LICENSE) – 本構想の利用許諾と帰属条件（SystemDesignManual準拠）
+- [docs/QnA_Spec.md](docs/QnA_Spec.md) – 質問構文仕様書
+- [docs/PolicyDB_Schema.md](docs/PolicyDB_Schema.md) – 制度DBスキーマ仕様
+- [docs/ui_flow.md](docs/ui_flow.md) – UI構成（マークダウン表形式）
