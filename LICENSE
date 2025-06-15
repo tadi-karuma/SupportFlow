@@ -1,0 +1,43 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+This work is licensed under the Creative Commons Attribution 4.0 International License.
+To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
+
+---
+
+This repository (including its structural templates, conceptual syntax, and staged description methods) is provided under the terms of CC BY 4.0.
+You may copy, redistribute, adapt, and build upon the content for any purpose, including commercial uses, provided that proper attribution is given.
+
+---
+
+Recommended attribution formats:
+
+▼ Japanese (for public/official documents):
+
+  本構想は、制度構想の設計手法として SystemDesignManual（M.T, CC BY 4.0）に準拠し、
+  構想段階構成および履歴構造に基づいて設計されています。
+
+  ※中略形式（簡略表記）：
+    - 「本構想は、SystemDesignManual（M.T）準拠により構成」
+    - 「↪︎構想構文：SystemDesignManual準拠（CC BY 4.0）」
+
+▼ English (for derived projects or international use):
+
+  Based on SystemDesignManual by M.T (https://github.com/tadi-karuma/SystemDesignManual),
+  licensed under CC BY 4.0.
+
+  ※Short form (for headers, code comments, etc.):
+    - SystemDesignManual compliant (M.T, CC BY 4.0)
+
+---
+
+Attribution to be credited as:
+
+  Author: M.T
+  Repository: https://github.com/tadi-karuma/SystemDesignManual
+  License: Creative Commons Attribution 4.0 International
+
+---
+
+Use of this structure in public institutions, municipalities, legislative frameworks, or academic policy designs is encouraged.
+This license ensures that derived works remain transparent, traceable, and structurally intelligible.
